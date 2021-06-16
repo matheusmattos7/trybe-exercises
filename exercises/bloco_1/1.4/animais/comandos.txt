@@ -1,5 +1,0 @@
-  257  ls
-  258  cat fofinhos_raivosos.txt
-  259  cat fofinhos_raivosos.txt >> animais_fofinhos.txt
-  260  cat animais_fofinhos.txt
-  261  history | tail -n 3
