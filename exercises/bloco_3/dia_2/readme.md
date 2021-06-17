@@ -15,4 +15,4 @@ Parte 2: <br>
 6 - Troque a cor de fundo de cada item da lista para a cor correspondente ao texto;<br>
 
 Parte 3: <br>
-
+1 - Coloque todo o CSS criado até agora nos exercícios anteriores em um arquivo externo. <br>
