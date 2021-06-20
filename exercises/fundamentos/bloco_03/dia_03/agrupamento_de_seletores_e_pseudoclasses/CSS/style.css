@@ -1,16 +1,12 @@
-h1 {
+h1, p {
   text-align: center;
 }
 
-p {
-  text-align: center;
-}
-
-ol li:hover {
+ol li:hover, ul li:hover {
   background-color: blue;
 }
 
-ol li:active {
+ol li:active, ul li:active {
   color: white;
 }
 
