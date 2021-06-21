@@ -2,6 +2,15 @@
   background-color: lightgrey;
 }
 
+.navigation ul{
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.navigation ul li{
+  display: inline-block;
+}
+
 .table {
   border-collapse: collapse;
   width: 40%;
@@ -15,9 +24,6 @@
   background-color: lightgrey;
   width: auto;
 }
-
-
-
 
 
 
