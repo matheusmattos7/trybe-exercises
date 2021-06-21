@@ -2,6 +2,25 @@
   background-color: lightgrey;
 }
 
+.table {
+  border-collapse: collapse;
+  width: 40%;
+}
+
+.table td{
+  border: 1px solid black;
+}
+
+.table tr td:nth-child(odd){
+  background-color: lightgrey;
+  width: auto;
+}
+
+
+
+
+
+
 .footer {
   background-color: lightgrey;
 }
