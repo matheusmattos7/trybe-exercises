@@ -58,9 +58,17 @@ article {
 }
 
 #stomatopoda-boxe {
-  width: 300px;
+  width: 280px;
+  margin: 0;
+}
+
+.container-3 {
+  position: relative;
+
 }
 
 .footer {
-  background-color: lightgrey;
+  background-color: blue;
+  color: white;
+  text-align: center;
 }
