@@ -1,20 +1,35 @@
+body {
+  margin: 0;
+}
+
+article {
+  margin-left: 10px;
+}
+
 .navigation {
-  background-color: lightgrey;
+  background-color: burlywood;
 }
 
 .navigation ul{
   list-style-type: none;
   overflow: hidden;
+  padding-left: 0px;
+  margin: 0;
 }
 
 .navigation ul li{
   display: inline-block;
   margin-right: 30px;
+  padding: 10px;
+  text-decoration: none;
 }
 
 .table {
   border-collapse: collapse;
-  width: 40%;
+  width: 30%;
+  height: 160px;
+  margin-left: 0px;
+  margin-bottom: 10px;
 }
 
 .table td{
