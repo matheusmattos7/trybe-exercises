@@ -57,6 +57,11 @@ article {
   width: auto;
 }
 
+#olhos-stomatopoda {
+  width: 260px;
+  margin-left: 10px;
+}
+
 #stomatopoda-boxe {
   width: 280px;
   margin: 0;
