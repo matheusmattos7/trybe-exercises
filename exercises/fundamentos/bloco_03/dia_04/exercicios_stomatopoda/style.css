@@ -9,6 +9,7 @@
 
 .navigation ul li{
   display: inline-block;
+  margin-right: 30px;
 }
 
 .table {
@@ -25,7 +26,9 @@
   width: auto;
 }
 
-
+#stomatopoda-boxe {
+  width: 300px;
+}
 
 .footer {
   background-color: lightgrey;
