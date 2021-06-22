@@ -6,12 +6,19 @@ article {
   margin-left: 10px;
 }
 
-.navigation {
-  background-color: burlywood;
+.headers h1 {
+  justify-content: center;
+  color: white;
+  margin: 0px;
+  
+}
+
+.navigation{
+  background-color: rgb(34, 34, 206);
+  text-align: center;
 }
 
 .navigation ul{
-  list-style-type: none;
   overflow: hidden;
   padding-left: 0px;
   margin: 0;
@@ -21,7 +28,16 @@ article {
   display: inline-block;
   margin-right: 30px;
   padding: 10px;
+  border: 1px transparent grey;
+}
+
+.navigation ul li a {
   text-decoration: none;
+  color: white;
+}
+
+#fatos {
+  margin: 5px 0px;
 }
 
 .table {
