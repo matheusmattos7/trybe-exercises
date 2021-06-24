@@ -5,8 +5,9 @@ let x = 1;
 let y = 2;
 let z = 5;
 
+let isEven = false;
+
 if (x % 2 === 0 || y % 2 === 0 || z % 2 === 0) {
-  console.log(true);
-} else {
-  console.log(false);
-}
+  isEven = true;
+} 
+  console.log(isEven);
