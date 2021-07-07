@@ -59,18 +59,24 @@ createBtnFeriados('Feriados');
 function displayBtnFeriado() {
   let getBtnFeriados = document.querySelector('#btn-holiday');
   let getFeriados = document.querySelectorAll('.holiday');
-  let btnColorBackground = 'rgb(238,238,238)';
+  let backgroundColor = 'rgb(238,238,238)';
   let setNewColor = 'white';
 
   getBtnFeriados.addEventListener('click', function () {
     for (let index = 0; index < getFeriados.length; index += 1) {
-      if (getFeriados[index].style.btnColorBackground === setNewColor) {
-        getFeriados[index].style.btnColorBackground = btnColorBackground;
+      if (getFeriados[index].style.backgroundColor === setNewColor) {
+        getFeriados[index].style.backgroundColor = backgroundColor;
       } else {
-        getFeriados[index].style.btnColorBackground = setNewColor;
+        getFeriados[index].style.backgroundColor = setNewColor;
       }
     }
   })
 };
 
 displayBtnFeriado();
+
+//Exercicio 4
+
+function createBtnFriday ('Sexta-feira') {
+  
+}
