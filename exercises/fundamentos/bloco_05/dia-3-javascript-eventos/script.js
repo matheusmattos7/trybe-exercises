@@ -26,32 +26,51 @@ function calendarDays() {
     let dezDaysListItem = document.createElement('li');
     dezDaysListItem.innerText = dezDaysList[index];
 
-      if (dezDaysList[index] === 24 || dezDaysList[index] === 31) {
-        dezDaysListItem.className = 'day holiday';
-      } else if (dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18) {
-        dezDaysListItem.className = 'day friday';
-      } else if (dezDaysList[index] === 25) {
-        dezDaysListItem.className = 'day holiday friday'; 
-      } else {
-        dezDaysListItem.className = 'day';
-      }
+    if (dezDaysList[index] === 24 || dezDaysList[index] === 31) {
+      dezDaysListItem.className = 'day holiday';
+    } else if (dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18) {
+      dezDaysListItem.className = 'day friday';
+    } else if (dezDaysList[index] === 25) {
+      dezDaysListItem.className = 'day holiday friday';
+    } else {
+      dezDaysListItem.className = 'day';
+    }
 
     daysMonth.appendChild(dezDaysListItem);
-  }  
+  }
 }
 calendarDays();
 
 //Exercicio 2
 
-function btnFeriados(Feriados) {
- let buttonContainer =  document.querySelector('.buttons-container');
- let newButton = document.createElement('button');
- 
- newButton.innerHTML = Feriados;
- newButton.id = 'btn-holiday';
- buttonContainer.appendChild(newButton);
+function createBtnFeriados(buttonName) {
+  let buttonContainer = document.querySelector('.buttons-container');
+  let newButton = document.createElement('button');
+
+  newButton.innerHTML = buttonName;
+  newButton.id = 'btn-holiday';
+  buttonContainer.appendChild(newButton);
 }
 
-btnFeriados();
+createBtnFeriados('Feriados');
 
-//Exercicio 3
+//Exercicio 3  (TIRAR DUVIDA)
+
+function displayBtnFeriado() {
+  let getBtnFeriados = document.querySelector('#btn-holiday');
+  let getFeriados = document.querySelectorAll('.holiday');
+  let btnColorBackground = 'rgb(238,238,238)';
+  let setNewColor = 'white';
+
+  getBtnFeriados.addEventListener('click', function () {
+    for (let index = 0; index < getFeriados.length; index += 1) {
+      if (getFeriados[index].style.btnColorBackground === setNewColor) {
+        getFeriados[index].style.btnColorBackground = btnColorBackground;
+      } else {
+        getFeriados[index].style.btnColorBackground = setNewColor;
+      }
+    }
+  })
+};
+
+displayBtnFeriado();
