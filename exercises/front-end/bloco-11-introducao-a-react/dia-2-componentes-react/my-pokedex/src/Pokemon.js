@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class Pokemon extends React.Component {
   render () {
-    const { pokemon: { name, type, averageWeight: { value, measurementUnit }, image } } = this.props;
+    const { pokemon: { name, type, averageWeight: { value, measurementUnit }, image, moreInfo } } = this.props;
 
     return (
       <div className="pokemon">
@@ -13,6 +13,7 @@ class Pokemon extends React.Component {
         <p>{`Average weight: ${value} ${measurementUnit}`}</p>
       </div>
         <img src={ image } alt={`${name} sprite`} />
+        <a target="_blank" rel="noreferrer" href={moreInfo}> More Info </a>
       </div>
       );
   }
@@ -25,6 +26,7 @@ Pokemon.propTypes = {
     value: PropTypes.number,
     measurementUnit: PropTypes.string,
     image: PropTypes.string,
+    moreInfo: PropTypes.string,
   }).isRequired,
 }
 
